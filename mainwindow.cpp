@@ -541,7 +541,6 @@ void MainWindow::on_export_btn_clicked()
         }
     qDebug() << students.size();
     libxl::Book *book = xlCreateXMLBook();
-    book->setKey(L"myh", L"windows-2c2b220001ccef0a66bf646dabr7s1he");
     if (book != NULL)
     {
         libxl::Sheet *sheet = book->addSheet(L"sheet1");
