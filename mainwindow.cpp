@@ -60,10 +60,10 @@ bool MainWindow::sqlInit()
 {
     db = QSqlDatabase::addDatabase("QMYSQL");
     db.setConnectOptions("MYSQL_OPT_RECONNECT=1");
-    db.setHostName("101.42.254.26");
-    db.setUserName("myh");
-    db.setPassword("myh112233");
-    db.setDatabaseName("db_myh");
+    db.setHostName("");
+    db.setUserName("");
+    db.setPassword("");
+    db.setDatabaseName("");
     db.setPort(3306);
     return db.open();
 }
